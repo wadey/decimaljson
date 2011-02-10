@@ -8,7 +8,21 @@ work in browsers and any CommonJS system (tested with Node.js)
 Numbers will be parsed into a Decimal class, with `.string` and
 `.number` attributes
 
-Example:
+## Installation
+
+For Node.js:
+
+    npm install decimaljson
+
+For browser use:
+
+    <script src='decimaljson.js' />
+    <!-- DJSON will be available as a global now -->
+
+## Example
+
+    // Only for Node.js
+    > var DJSON = require('decimaljson')
 
     > var array = DJSON.parse('[1.0000000000000001]')
     > array
