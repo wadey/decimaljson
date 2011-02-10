@@ -2,7 +2,8 @@
 
 Very simple JSON parser that preserves the full precision of numbers. It
 is a fork of `json_parse.js` from
-[JSON-js](https://github.com/douglascrockford/JSON-js).
+[JSON-js](https://github.com/douglascrockford/JSON-js). This module should
+work in browsers and any CommonJS system (tested with Node.js)
 
 Numbers will be parsed into a Decimal class, with `.string` and
 `.number` attributes
