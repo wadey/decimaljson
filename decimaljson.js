@@ -62,6 +62,7 @@
     }
 
     function Decimal(string, number) {
+        if (!(this instanceof Decimal)) return new Decimal(string, number)
         this.string = string
         this.number = number || +string
     }
