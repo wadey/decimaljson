@@ -32,11 +32,26 @@ For browser use:
     > array[1].number
     1
 
+## Benchmarks
+
+Benchmarks for `DJSON.parse` and `DJSON.stringify` are provided. Here are some
+example results from my laptop:
+
+    node 0.2.6 (x86, v8 2.3.8):
+      - JSON.parse is 2x faster than DJSON.parse
+      - JSON.stringify and DJSON.stringify are the same speed
+
+    node 0.4.1 (x86, v8 3.1.5):
+      - JSON.parse is 4.5x faster than DJSON.parse
+      - JSON.stringify is 3x faster than DJSON.stringify
+
+## Changelog
+
+- 0.2.0: Added DJSON.stringify. Added benchmarks.
+- 0.1.0: Initial release, DJSON.parse.
+
 ## TODO
 
 - Try to make a native module for Node.js that uses a modified version of the
-  C++ JSON parser. This is harder than I expected as JSON.parse is implemented
-  by using a special case of the V8 JS parser. A performance test puts DJSON
-  at 50% the speed of V8's JSON.parse.
-- Implement a `DJSON.stringify` that isn't lossy (possibly by using the native
-  `JSON.stringify` with a `replacer`)
+  v8 JSON parser. This is harder than I expected as JSON.parse is implemented
+  by using a special case of the V8 JS parser.
