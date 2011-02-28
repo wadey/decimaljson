@@ -1,11 +1,15 @@
 {
   "name": "decimaljson",
   "description": "JSON parser that preserves precision",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "https://github.com/wadey/decimaljson",
   "author": "Wade Simmons <wade@wades.im> (http://wades.im/mons)",
   "main": "./decimaljson",
   "engines": {
     "node": "*"
-  }
+  },
+  "directories": {},
+  "files": [
+    ""
+  ]
 }
