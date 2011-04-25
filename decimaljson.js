@@ -107,8 +107,6 @@
         text,
 
         error = function (m) {
-          console.log("ERRORING")
-
 // Call error when something is wrong.
 
             throw {
