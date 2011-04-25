@@ -1,7 +1,7 @@
 {
   "name": "decimaljson",
   "description": "JSON parser that preserves precision",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "homepage": "https://github.com/wadey/decimaljson",
   "author": "Wade Simmons <wade@wades.im> (http://wades.im/mons)",
   "main": "./decimaljson",
